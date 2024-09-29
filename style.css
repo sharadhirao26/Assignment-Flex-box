@@ -1,0 +1,398 @@
+body{
+    margin: 0;
+    background-color: black;
+
+}
+
+.insta-page{
+    display: flex;
+}
+
+
+
+/* .side-bar-box{
+    position: relative;
+    width: 244px;
+    height: 800px;
+    background-color: rgb(197, 0, 0);
+    border-right: solid 1px rgb(45, 45, 45);
+} */
+
+.side-bar-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 244px;  /* Set the width to maintain layout consistency */
+    height: 100vh; /* Make sure it takes the full height of the viewport */
+    background-color: rgb(0, 0, 0);
+    border-right: solid 1px rgb(45, 45, 45);
+    overflow-y: auto;  /* Add scrolling if the content overflows */
+    z-index: 1000;  /* Optional: Ensures the sidebar stays on top of other content */
+}
+
+
+
+/* ------------------------------INSTAGRAM HEADING------------------ */
+.insta-heading{
+    position: absolute;  
+}
+
+.insta-text-logo{
+    position: absolute;
+    width: 110px;
+    top: 28px;
+    left: 18px;
+}
+/* -------------------------HOME----------------------- */
+.home{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 100px;
+    left: 25px;
+    gap: 15px;
+
+
+}
+.home-text{
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+/* -------------------------SEARCH----------------------- */
+.search{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 160px;
+    left: 25px;
+    gap: 15px; 
+}
+
+.search-text{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+
+/* -------------------------EXPLORE----------------------- */
+.explore{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 220px;
+    left: 25px;
+    gap: 15px; 
+}
+
+.explore-text{
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/* -------------------------REELS---------------------- */
+.reels{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 274px;
+    left: 27px;
+    gap: 17px; 
+}
+
+.reels-text{
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+/* -------------------------MESSAGES---------------------- */
+.message{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 330px;
+    left: 27px;
+    gap: 17px; 
+}
+
+.message-text{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+/* -------------------------NOTIFICATIONS---------------------- */
+.notification{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 385px;
+    left: 27px;
+    gap: 17px; 
+}
+
+.noti-text{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+/* -------------------------CREATE---------------------- */
+.create{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 444px;
+    left: 27px;
+    gap: 17px; 
+}
+
+.create-text{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+/* -------------------------PROFILE---------------------- */
+.profile{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 500px;
+    left: 27px;
+    gap: 17px; 
+}
+
+.profile-text{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+/* ------------------------THREADS-------------------- */
+.threads{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 85px;
+    left: 27px;
+    gap: 12px; 
+}
+
+.threads-text{
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+
+/* ------------------------MORE--------------------- */
+.more{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    bottom: 28px;
+    left: 27px;
+    gap: 14px; 
+}
+
+.more-text{
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+
+
+
+
+/* -------------------------------------LEFT SIDE --------------------------------------- */
+
+/* .left-side-box{
+    width: 1100px;
+    padding-left: 180px;
+    background-color: black; 
+} */
+
+.left-side-box {
+    margin-left: 420px; /* This should match the width of your sidebar */
+    padding: 0px;
+    background-color: black;
+    width: calc(100% - 244px); /* Ensures content takes up the remaining width */
+    min-height: 100vh; /* Ensure full-height content area */
+}
+
+.insta-header-box{
+    margin-top: 30px;
+    width: 900px;
+    height: 290px;
+    padding-bottom: 180px;
+    /* height: 250px; */
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    border-bottom: solid 1px rgb(48, 48, 48);
+    
+    
+}
+.google-logo{
+    position: absolute;
+}
+.right-profile-content{
+    width: 400px;
+    position: absolute;
+    right: 220px;
+}
+
+.profile-header{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: absolute;
+    right: 4px;
+    color: #ffffff;
+    
+}
+
+.google-logo-img{
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    width: 150px;
+}
+
+
+.g-text p{
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+
+.blue-tick-img{
+    width: 20px;
+}
+
+.follow-btn{
+    padding: 8px;
+    border-radius: 8px;
+    border: none;
+    width: 83px;
+    background-color: rgb(88, 167, 251);
+    color: #ffffff;
+    
+}
+
+.mess-btn{
+    padding: 8px;
+    width: 86px;
+    border-radius: 8px;
+    border: none;
+    color: #ffffff;
+    background-color: rgb(72, 72, 72);
+}
+
+.add-person-icon{
+    display: block;
+    width: 25px;
+    padding: 4px 3px 4px 6px;
+    background-color: rgb(72, 72, 72);
+    
+    border-radius: 6px;
+}
+
+.post-info{
+    display: flex;
+    gap: 15px;
+    position: absolute;
+    top: 50px;
+    right: 37px;
+    font-size: 17px;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+.google-thread-btn{
+    width: 66px;
+    border: none;
+    background-color: rgb(72, 72, 72);
+    padding: 4px;
+    border-radius: 16px;
+    color: #ffffff;
+}
+
+.post-bold{
+    font-weight: bold;
+}
+
+.p-2{
+    color: gray;
+}
+
+.profile-decription{
+    position: absolute;
+    top: 93px;
+    right: 2px;
+    font-size: 14px;
+    line-height: 6px;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+
+.content-box{
+    background-color: rgb(0, 0, 0);
+    width: 900px;
+    display: flex;
+    gap: 20px;
+    color: #ffffff;
+    justify-content: center;
+    margin-bottom: 12px;
+    
+}
+
+.bi-grid-3x3{
+    position: absolute;
+    top: 18px;
+    left: 12px;
+}
+
+.content-btn .bi-camera-reels{
+    position: absolute;
+    top: 18px;
+    left: 12px;
+}
+
+.bi-person-square{
+    position: absolute;
+    top: 18px;
+    left: 5px;
+}
+
+.section-btn-1, .section-btn-2, .section-btn-3{
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 8px;
+    padding-top: 17px;
+    width: 100px;
+   
+}
+
+
+.content-btn{
+    display: flex;
+    position: relative;
+}
+
+.insta-post{
+    width: 300px;
+    height: 300px;
+}
+
+.image-posts{
+    display: flex;
+    gap: 9px;
+    margin-bottom: 8px;
+}
